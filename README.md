@@ -30,8 +30,13 @@ This code requires a working installation of [Caffe](http://caffe.berkeleyvision
 ## Colorization-centric Functionality ##
 
 ### (0) Test-Time Python Script ###
-We provide a script for colorizing a single image. Run `./models/fetch_release_models.sh` to download the model. Then, run `python ./colorize.py -img_in [[INPUT_IMG_PATH]] -img_out [[OUTPUT_IMG_PATH]]`. For example, try `python ./colorize.py -img_in ./demo/imgs/ILSVRC2012_val_00041580.JPEG -img_out ./out.png`.
+We provide a script for colorizing a single image. 
+Run `./models/fetch_release_models.sh` to download the model. 
+Then, run `python ./colorize.py -img_in [[INPUT_IMG_PATH]] -img_out [[OUTPUT_IMG_PATH]]`. 
+For example, try `photo2color.sh` or python ./colorize.py -img_in ./demo/imgs/ILSVRC2012_val_00041580.JPEG -img_out ./out.png`.
 
+Colorizing a movie, replace `mov2color.sh` with local movie file and run it. 
+  
 ### (1) Test-Time Demo in IPython Notebook ###
 We also include demo usage as an iPython notebook, under [`./demo/colorization_demo_v2.ipynb`](https://github.com/richzhang/colorization/blob/master/demo/colorization_demo_v2.ipynb). This IPython Notebook demonstrates how to use our colorization network to colorize a grayscale image. To run this, after cloning the directory, `cd` into the `demo` directory, run `ipython notebook` and open `colorization_demo_v2.ipynb` in your web browser.
 
